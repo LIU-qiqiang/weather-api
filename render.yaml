@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: weather-api
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: OPENWEATHER_API_KEY
+        value: 00de629420ef2f5da0acdf5d60416132
