@@ -9,7 +9,7 @@ API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 app = Flask(__name__)
 
-API_KEY = "00de629420ef2f5da0acdf5d60416132"  # 替换为你的 OpenWeatherMap API 密钥
+
 
 @app.route('/check-weather', methods=['POST'])
 def check_weather():
