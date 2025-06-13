@@ -3,12 +3,13 @@ from flask import Flask, request, jsonify
 import urllib.parse
 from dotenv import load_dotenv
 import os
+from flask_cors import CORS
 
 load_dotenv()
 API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 app = Flask(__name__)
-
+CORS(app)
 
 
 @app.route('/check-weather', methods=['POST'])
